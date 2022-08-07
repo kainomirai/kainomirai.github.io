@@ -135,9 +135,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #BE7810;
-    color: #fff;
-    background-color: #BE7810;
+    border-color: #763614;
+    color: #FFC31F;
+    background-color: #763614;
 }
 
 .btn-xl:active,
@@ -176,7 +176,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: Rakkas;
+    font-family: 'Fredoka One';
     font-size: 50px;
     color: #{{ site.data.template.color.primary }};
 }
@@ -207,7 +207,6 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .nav li a {
-    text-transform: uppercase;
     font-family: "Quattrocento Sans";
     font-size: 20.7px;
     font-weight: 400;
@@ -218,21 +217,26 @@ fieldset[disabled] .btn-xl.active {
     transition: all ease .35s;
 }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar-default .nav li a:hover {
     outline: 0;
     color: #{{ site.data.template.color.primary }};
 }
 
+.navbar-default .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
+    color: #000;
     background-color: #{{ site.data.template.color.primary }};
+    padding: 13px;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
+    color: #000;
     background-color: #{{ site.data.template.color.secondary }};
 }
 
@@ -254,11 +258,11 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
+        border-radius: 5px;
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
+        padding: 5px 0;
         background-color: #763614;
     }
 
