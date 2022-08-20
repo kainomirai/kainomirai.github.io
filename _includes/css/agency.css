@@ -52,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
 }
@@ -328,6 +328,12 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+    color: #763614;
+    font-family: {{ site.data.template.font.primary }};
+    background-color: #FFC31F;
+    display: flex;
+    width: fit-content;
+    line-height: 35px;
 }
 
 section h3.section-subheading {
@@ -860,4 +866,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+.about-container {
+    display: flex;
 }
